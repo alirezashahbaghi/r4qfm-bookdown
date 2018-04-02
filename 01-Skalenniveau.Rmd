@@ -1,0 +1,116 @@
+# Skalenniveau 
+
+- Nominal
+- Ordinal
+- Interval
+- Ratio
+
+## Nominal
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+city <- c("Berlin", "Hamburg", "Dresedn", "NY")
+
+country <- c("Germany", "Germany","Germany", "USA")
+
+gender <- c("male", "male", "female", "male")
+```
+
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+city <- c("Berlin", "Hamburg", "Dresedn", "NY")
+
+city 
+
+class(city)
+```
+
+## Ordinal
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+rank <- c(4, 2, 3, 1, 6, 5)
+
+temp <- c("High", "Low", "High", "Medium")
+
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+rank <- c(4, 2, 3, 1, 6, 5)
+
+rank
+
+class(rank)
+
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+rank <- c(4, 2, 3, 1, 6, 5)
+
+rank.f <- factor(rank)
+
+rank.f
+
+class(rank.f)
+
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+rank <- c(4, 2, 3, 1, 6, 5)
+rank.f <- factor(rank, 
+                 order = TRUE, 
+                 labels = c("One", "Two",
+                            "Three", "four", 
+                            "five", "six"))
+rank.f
+class(rank.f)
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+temp <- c("High", "Low", "High", "Medium")
+
+temp
+
+class(temp)
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+temp <- c("High", "Low", "High", "Medium")
+
+temp.f <- factor(temp)
+
+temp.f
+
+class(temp.f)
+```
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+temp <- c("High", "Low", "High", "Medium")
+temp.f <- factor(temp,
+                 order = TRUE,
+                 labels = c("Low", "Medium", "High"))
+temp.f
+class(temp.f)
+```
+
+## Interval
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+
+celsius <- c(19 , 20, 23, 27, 35, 30)
+
+celsius
+
+class(celsius)
+```
+
+## Ratio
+
+```{r, comment = "", echo = TRUE, eval= TRUE}
+
+kelvin <- c(0 , 273, 200, 350, 354, 300)
+
+population <- c(3610156, 1774242, 543825, 8550405)
+
+class(kelvin)
+
+class(population)
+```
